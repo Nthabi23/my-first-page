@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>>, initial-scale=1.0">
+    <title>Project Flower</title>
+    <style>
+        body{
+            color:#ffff;
+        }
+        h1{
+            color: #ffff;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 200;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs; 
+        
+        }
+        h2{
+             color: #ffff;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 200;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs; 
+        }
+        li{
+            display: inline;
+            margin: 0 15px;
+        }
+        ul{
+            list-style: none;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+        width: 300px;
+        display: block;
+        margin:0 auto;
+        border-radius: 10px 20px;
+        }
+        p {
+            color:#ffff;
+            inline-size: 5;
+            font-size:17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover { 
+            text-decoration: underline white;
+        }
+        .flora {
+          background: radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%);  
+        }
+        .contactUs{
+            text-align: center;
+            font-size: 18px;
+        }
+        .contact{
+            color:rgb(248, 250, 107);
+        }
+    button{
+            transition: all 200ms ease-in-out;
+            border: 1px solid rgb(248, 250, 107);
+            border-radius: 25px;
+            font-size: 15px;
+            background: transparent;
+            color:#ffff;
+            display: block;
+            margin: 0 auto 30px auto;
+            padding: 15px 15px;
+        
+        }
+        button:hover{
+            text-decoration: underline;
+        background: transparent;
+        color:rgb(248, 250, 107);
+        cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="flora">
+    <h1>
+        Sunflower Heaven
+        </h1>
+        <h2>
+        we're all golden
+        sunflowers inside.
+</h2>
+<ul style="list-style-type: none;">
+    <li>
+        <a href="https://www.countryliving.com/gardening/g32128958/sunflower-types/" target="_blank">Types of sunflower </a>
+    </li>
+    <li>
+        <a href="https://www.twinkl.co.za/teaching-wiki/sunflower-life-cycle" target="_blank"> Sunflower Life Cycle </a>
+    </li>
+    <li>
+        <a href="https://www.grainsa.co.za/harvesting-and-handling-of-sunflowers" target="_blank"> Harvesting of sunflower </a>
+    </li>
+    <br />
+    <hr>
+    <img src="https://isteam.wsimg.com/ip/109a9431-59b0-446b-a29b-f484e131cd8b/ols/2428_original/:/rs=w:600,h:600"
+         alt="bouquet of  flowers" />
+        <p>
+            Sunflowers represent: A long life and lasting happiness, as most varieties stand in full bloom throughout the
+            summer.
+            Good fortune and positive opportunities — a lucky charm for someone beginning a new career path or starting a new
+            job.
+        </p>
+    <a href="https://www.almanac.com/plant/sunflowers" target="_blank" >More about Sunflowers here
+     </a>
+     <hr>
+    <br />
+    <div class="contactUs">
+        <span class="contact">Email:</span>enquire@sunflower.org
+        <span class="contact">Facebook:</span>Sunflower Org
+    </div>
+    <br />
+    <button>
+        Donate Now
+    </button>
+    <p> coded by 
+        <strong>Nthabiseng Monageng</strong>
+    </p>
+  </div>
+  <script>
+    let identity = prompt("What is your name?");
+        let passion = prompt("Do you like Sunflowers");
+        let emoji = prompt("What is favorite emoji?")
+
+        if (passion === "no") {
+           alert("We are more than happy to teach you about Sunflowers")
+        } else {
+        alert("Welcome " + identity + " we are happy to see you!!!! " + emoji)
+        }
+    
+
+
+
+    function donate () {
+        let name = prompt("What is your name?")
+        let email = prompt("What is your email address?")
+    
+    alert("Thank You " + name + ", for your donation we will be in touch on " + email + " for more info" )
+    }
+    let changeButton = document.querySelector("button");
+        changeButton.addEventListener("click", donate);
+  </script>
+</body>
+</html>
